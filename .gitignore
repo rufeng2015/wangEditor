@@ -5,6 +5,7 @@ node_modules/*
 npm-debug.log
 example/upload-files
 
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -49,3 +50,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+# npm
+yarn.lock
+npm-debug.log*
+node_modules
+package-lock.json
