@@ -2601,7 +2601,7 @@ Video.prototype = {
                 // 标题
                 title: '插入视频',
                 // 模板
-                tpl: '<div>\n                        <input id="' + textValId + '" type="text" class="block" placeholder="\u683C\u5F0F\u5982\uFF1A<iframe src=... ></iframe>"/>\n                        <div class="w-e-button-container">\n                            <button id="' + btnId + '" class="right">\u63D2\u5165</button>\n                        </div>\n                    </div>',
+                tpl: '<div>\n                        <input id="' + textValId + '" type="text" class="block" placeholder="\u8BF7\u8F93\u5165\u89C6\u9891\u5730\u5740"/>\n                        <div class="w-e-button-container">\n                            <button id="' + btnId + '" class="right">\u63D2\u5165</button>\n                        </div>\n                    </div>',
                 // 事件绑定
                 events: [{
                     selector: '#' + btnId,
@@ -2614,8 +2614,9 @@ Video.prototype = {
                         // <iframe height=498 width=510 src='http://player.youku.com/embed/XMjcwMzc3MzM3Mg==' frameborder=0 'allowfullscreen'></iframe>
 
                         if (val) {
+                            var url = '<iframe class="ql-video" frameborder="0" allowfullscreen="true" src="' + val + '"></iframe>';
                             // 插入视频
-                            _this._insert(val);
+                            _this._insert(url);
                         }
 
                         // 返回 true，表示该事件执行完之后，panel 要关闭。否则 panel 不会关闭
