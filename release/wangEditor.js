@@ -2615,7 +2615,7 @@ Video.prototype = {
 
                         if (val) {
                             // let url = `<iframe class="ql-video" frameborder="0" allowfullscreen="true" src="${val}"></iframe>`
-                            var url = '<video src="' + val + '" controls></video>';
+                            var url = '<video src="' + val + '" controls style="max-width: 100%;max-height: 100%;"></video>';
                             // 插入视频
                             _this._insert(url);
                         }
