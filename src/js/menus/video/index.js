@@ -57,7 +57,7 @@ Video.prototype = {
 
                                 if (val) {
                                     // let url = `<iframe class="ql-video" frameborder="0" allowfullscreen="true" src="${val}"></iframe>`
-                                    let url = `<video src="${val}" controls style="max-width: 100%;max-height: 100%;"></video>`
+                                    let url = `<video src="${val}"  controls autoplay style="max-width: 100%;max-height: 100%;"></video>`
                                     // 插入视频
                                     this._insert(url)
                                 }
