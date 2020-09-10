@@ -56,7 +56,8 @@ Video.prototype = {
                                 // <iframe height=498 width=510 src='http://player.youku.com/embed/XMjcwMzc3MzM3Mg==' frameborder=0 'allowfullscreen'></iframe>
 
                                 if (val) {
-                                    let url = `<iframe class="ql-video" frameborder="0" allowfullscreen="true" src="${val}"></iframe>`
+                                    // let url = `<iframe class="ql-video" frameborder="0" allowfullscreen="true" src="${val}"></iframe>`
+                                    let url = `<video src="${val}" controls></video>`
                                     // 插入视频
                                     this._insert(url)
                                 }
